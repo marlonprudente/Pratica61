@@ -23,10 +23,8 @@ public class Main {
     time2.put("Zagueiro", new Jogador(7, "Jose"));
     time2.put("Atacante", new Jogador(15, "Mario"));    
 
-    for(int i = 0; i<time1.size();i++){
-        if(time1.keySet()==time2.keySet()){
-            System.out.println("T1:" + time1 + "T2:" + time2);
-        }
+    for(String posicoes : time1.keySet()){
+        System.out.println(posicoes + " = " + time1.get(posicoes) + " / " + time2.get(posicoes));
     }
      
 
